@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPY - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MAIN WEBSITE CONTAINER -->
+    <div class="app-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">🛍️</div>
+                <h1>SHOPY</h1>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="sidebar-nav">
+
+                <a href="#home" class="nav-item active">
+                    <span>⌂</span>
+                    <p>Home</p>
+                </a>
+
+                <a href="#wishlist" class="nav-item">
+                    <span>♡</span>
+                    <p>Wishlist</p>
+                </a>
+
+                <a href="#orders" class="nav-item">
+                    <span>♧</span>
+                    <p>Your Orders</p>
+                </a>
+
+                <a href="#account" class="nav-item">
+                    <span>♙</span>
+                    <p>Account</p>
+                </a>
+
+                <a href="#support" class="nav-item">
+                    <span>♧</span>
+                    <p>Help & Support</p>
+                </a>
+
+            </nav>
+
+            <!-- PREMIUM CARD -->
+            <div class="premium-card">
+
+                <div class="premium-crown">👑</div>
+
+                <h2>Go Premium</h2>
+
+                <p>
+                    Unlock exclusive
+                    deals & benefits!
+                </p>
+
+                <a href="#premium" class="premium-button">
+                    Join Now →
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP HEADER -->
+            <header class="top-header">
+
+                <div class="search-container">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        placeholder="Search for products, brands and more..."
+                    >
+
+                    <button class="search-button">
+                        Search
+                    </button>
+
+                </div>
+
+                <div class="header-actions">
+
+                    <a href="#notifications" class="notification">
+                        ♧
+                        <span class="notification-count">2</span>
+                    </a>
+
+                    <a href="#account" class="profile">
+
+    <img
+        src="https://i.pravatar.cc/100?img=47"
+        alt="User Profile"
+    >
+
+    <span>Hi, User
+
+    </span>
+
+</a>
+
+                </div>
+
+            </header>
+
+
+            <!-- HOME PAGE -->
+            <section id="home" class="page-section">
+
+                <!-- HERO BANNER -->
+                <section class="hero-banner">
+
+                    <button class="slider-arrow left-arrow">
+                        ❮
+                    </button>
+
+                    <div class="hero-content">
+
+                        <h1>
+                            Big Savings,
+                            <span>Bigger Smiles!</span>
+                        </h1>
+
+                        <p>
+                            Up to <strong>70% OFF</strong>
+                            on Top Brands
+                        </p>
+
+                        <a href="#trending" class="shop-now">
+                            Shop Now →
+                        </a>
+
+                    </div>
+
+                    <div class="hero-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600"
+                            alt="Shopping Collection"
+                        >
+
+                    </div>
+
+                    <button class="slider-arrow right-arrow">
+                        ❯
+                    </button>
+
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                </section>
+
+
+                <!-- PRODUCT CATEGORIES -->
+                <section class="categories-section">
+
+                    <div class="category-card">
+                        <div class="category-image">📱</div>
+                        <h3>Mobiles</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">💻</div>
+                        <h3>Laptops</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">🎧</div>
+                        <h3>Headphones</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">⌚</div>
+                        <h3>Smart Watches</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">👕</div>
+                        <h3>Fashion</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">👟</div>
+                        <h3>Footwear</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">💄</div>
+                        <h3>Beauty</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">🪴</div>
+                        <h3>Home & Living</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">🧸</div>
+                        <h3>Toys</h3>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">⊞</div>
+                        <h3>More</h3>
+                    </div>
+
+                </section>
+
+
+                <!-- TRENDING DEALS -->
+                <section id="trending" class="trending-section">
+
+                    <div class="section-heading">
+
+                        <h2>🔥 Trending Deals</h2>
+
+                        <a href="#all-products">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <!-- PRODUCT GRID -->
+                    <div class="product-grid">
+
+
+                        <!-- PRODUCT 1 -->
+                        <article class="product-card">
+
+                            <span class="discount">-15%</span>
+
+                            <button class="wishlist-icon">
+                                ♡
+                            </button>
+
+                            <div class="product-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"
+                                    alt="Smartphone"
+                                >
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>iPhone 16</h3>
+
+                                <div class="price">
+                                    <del>₹89,900</del>
+                                    <strong>₹76,415</strong>
+                                </div>
+
+                                <button class="add-cart">
+                                    🛒 Add to Cart
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PRODUCT 2 -->
+                        <article class="product-card">
+
+                            <span class="discount">-40%</span>
+
+                            <button class="wishlist-icon">
+                                ♡
+                            </button>
+
+                            <div class="product-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400"
+                                    alt="Wireless Earbuds"
+                                >
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>boAt Airdopes 141</h3>
+
+                                <div class="price">
+                                    <del>₹3,499</del>
+                                    <strong>₹2,099</strong>
+                                </div>
+
+                                <button class="add-cart">
+                                    🛒 Add to Cart
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PRODUCT 3 -->
+                        <article class="product-card">
+
+                            <span class="discount">-50%</span>
+
+                            <button class="wishlist-icon">
+                                ♡
+                            </button>
+
+                            <div class="product-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+                                    alt="Smart Watch"
+                                >
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>Noise ColorFit Pro 5</h3>
+
+                                <div class="price">
+                                    <del>₹7,999</del>
+                                    <strong>₹3,999</strong>
+                                </div>
+
+                                <button class="add-cart">
+                                    🛒 Add to Cart
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PRODUCT 4 -->
+                        <article class="product-card">
+
+                            <span class="discount">-60%</span>
+
+                            <button class="wishlist-icon">
+                                ♡
+                            </button>
+
+                            <div class="product-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+                                    alt="Nike Shoes"
+                                >
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>Nike Revolution 7</h3>
+
+                                <div class="price">
+                                    <del>₹6,995</del>
+                                    <strong>₹2,799</strong>
+                                </div>
+
+                                <button class="add-cart">
+                                    🛒 Add to Cart
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PRODUCT 5 -->
+                        <article class="product-card">
+
+                            <span class="discount">-35%</span>
+
+                            <button class="wishlist-icon">
+                                ♡
+                            </button>
+
+                            <div class="product-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400"
+                                    alt="Makeup Kit"
+                                >
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>Lakmé Makeup Kit</h3>
+
+                                <div class="price">
+                                    <del>₹1,499</del>
+                                    <strong>₹974</strong>
+                                </div>
+
+                                <button class="add-cart">
+                                    🛒 Add to Cart
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- WISHLIST PAGE -->
+            <section id="wishlist" class="page-section">
+
+                <div class="page-heading">
+                    <h1>My Wishlist ❤️</h1>
+                    <p>Your favourite products in one place.</p>
+                </div>
+
+                <div class="wishlist-container">
+
+                    <h2>Saved Products</h2>
+
+                    <div class="wishlist-products">
+                        <!-- Wishlist products will appear here -->
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- YOUR ORDERS PAGE -->
+            <section id="orders" class="page-section">
+
+                <div class="page-heading">
+                    <h1>My Orders 📦</h1>
+                    <p>Track and manage your purchases.</p>
+                </div>
+
+                <div class="orders-container">
+
+                    <div class="order-tabs">
+                        <button>All Orders</button>
+                        <button>Processing</button>
+                        <button>Shipped</button>
+                        <button>Delivered</button>
+                        <button>Cancelled</button>
+                    </div>
+
+                    <div class="orders-list">
+                        <!-- Order details will appear here -->
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACCOUNT PAGE -->
+            <section id="account" class="page-section">
+
+                <div class="page-heading">
+                    <h1>My Account 👤</h1>
+                    <p>Manage your personal information.</p>
+                </div>
+
+                <div class="account-container">
+
+                    <div class="account-profile">
+
+                        <img
+                            src="https://i.pravatar.cc/150?img=47"
+                            alt="Profile"
+                        >
+
+                        <h2>User</h2>
+                        <p>Welcome to SHOPY!</p>
+
+                    </div>
+
+                    <div class="account-details">
+
+                        <h2>Personal Information</h2>
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" value="User" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea placeholder="Enter your address"></textarea>
+                        </div>
+
+                        <button class="save-button">
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- HELP AND SUPPORT PAGE -->
+            <section id="support" class="page-section">
+
+                <div class="page-heading">
+                    <h1>Help & Support 🎧</h1>
+                    <p>We're here to help you!</p>
+                </div>
+
+                <div class="support-container">
+
+                    <div class="support-card">
+                        <span>📦</span>
+                        <h3>Order Issues</h3>
+                        <p>Get help with your orders.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <span>💳</span>
+                        <h3>Payment Issues</h3>
+                        <p>Get assistance with payments.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <span>🚚</span>
+                        <h3>Delivery Support</h3>
+                        <p>Track delivery problems.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <span>↩️</span>
+                        <h3>Returns & Refunds</h3>
+                        <p>Get help with returns.</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-support">
+
+                    <h2>Contact Our Support Team</h2>
+
+                    <input type="text" placeholder="Your Name">
+
+                    <input type="email" placeholder="Your Email">
+
+                    <textarea placeholder="Describe your problem..."></textarea>
+
+                    <button>Submit Request</button>
+
+                </div>
+
+            </section>
+
+
+            <!-- PREMIUM PAGE -->
+            <section id="premium" class="page-section">
+
+                <div class="premium-banner">
+
+                    <div class="premium-content">
+
+                        <span>👑 SHOPY PREMIUM</span>
+
+                        <h1>
+                            Shopping Gets
+                            <strong>Better!</strong>
+                        </h1>
+
+                        <p>
+                            Unlock exclusive deals, special discounts
+                            and premium shopping benefits.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="premium-benefits">
+
+                    <h2>Premium Benefits</h2>
+
+                    <div class="benefit-grid">
+
+                        <div class="benefit-card">
+                            <span>🎁</span>
+                            <h3>Exclusive Deals</h3>
+                            <p>Access premium-only offers.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <span>🚚</span>
+                            <h3>Free Delivery</h3>
+                            <p>Enjoy eligible free deliveries.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <span>⭐</span>
+                            <h3>Special Rewards</h3>
+                            <p>Get exciting shopping rewards.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <span>💜</span>
+                            <h3>Priority Support</h3>
+                            <p>Get dedicated customer support.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="premium-subscription">
+
+                    <h2>Become a Premium Member</h2>
+
+                    <p>Enjoy a better shopping experience.</p>
+
+                    <button>Join Premium Now →</button>
+
+                </div>
+
+            </section>
+
+
+            <!-- CART PAGE -->
+            <section id="cart" class="page-section">
+
+                <div class="page-heading">
+                    <h1>My Shopping Cart 🛒</h1>
+                    <p>Review your shopping items.</p>
+                </div>
+
+                <div class="cart-container">
+                    <!-- Cart products will appear here -->
+                </div>
+
+            </section>
+
+
+            <!-- NOTIFICATIONS PAGE -->
+            <section id="notifications" class="page-section">
+
+                <div class="page-heading">
+                    <h1>Notifications 🔔</h1>
+                    <p>Stay updated with SHOPY.</p>
+                </div>
+
+                <div class="notifications-container">
+                    <!-- Notifications will appear here -->
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+
+                <div class="footer-logo">
+                    SHOPY
+                </div>
+
+                <p>
+                    Your happiness, our priority.
+                    Shop smarter. Shop better.
+                </p>
+
+                <p>
+                    © 2026 SHOPY. All Rights Reserved.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
