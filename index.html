@@ -24,7 +24,7 @@
             <!-- NAVIGATION -->
             <nav class="sidebar-nav">
 
-                <a href="#home" class="nav-item active">
+                <a href="#home" class="nav-item">
                     <span>⌂</span>
                     <p>Home</p>
                 </a>
@@ -94,6 +94,12 @@
                 </div>
 
                 <div class="header-actions">
+
+                    <a href="#cart" class="header-cart">
+                        <span aria-hidden="true">🛒</span>
+                        <span class="cart-link-add">Add to Cart</span>
+                        <span class="cart-link-view">View Cart</span>
+                    </a>
 
                     <a href="#notifications" class="notification">
                         ♧
@@ -172,40 +178,40 @@
                 <!-- PRODUCT CATEGORIES -->
                 <section class="categories-section">
 
-                    <div class="category-card">
+                    <a href="#product-iphone" class="category-card">
                         <div class="category-image">📱</div>
                         <h3>Mobiles</h3>
-                    </div>
+                    </a>
 
                     <div class="category-card">
                         <div class="category-image">💻</div>
                         <h3>Laptops</h3>
                     </div>
 
-                    <div class="category-card">
+                    <a href="#product-earbuds" class="category-card">
                         <div class="category-image">🎧</div>
                         <h3>Headphones</h3>
-                    </div>
+                    </a>
 
-                    <div class="category-card">
+                    <a href="#product-watch" class="category-card">
                         <div class="category-image">⌚</div>
                         <h3>Smart Watches</h3>
-                    </div>
+                    </a>
 
                     <div class="category-card">
                         <div class="category-image">👕</div>
                         <h3>Fashion</h3>
                     </div>
 
-                    <div class="category-card">
+                    <a href="#product-shoes" class="category-card">
                         <div class="category-image">👟</div>
                         <h3>Footwear</h3>
-                    </div>
+                    </a>
 
-                    <div class="category-card">
+                    <a href="#product-makeup" class="category-card">
                         <div class="category-image">💄</div>
                         <h3>Beauty</h3>
-                    </div>
+                    </a>
 
                     <div class="category-card">
                         <div class="category-image">🪴</div>
@@ -240,17 +246,19 @@
 
 
                     <!-- PRODUCT GRID -->
-                    <div class="product-grid">
+                    <div class="product-grid" id="all-products">
 
 
                         <!-- PRODUCT 1 -->
-                        <article class="product-card">
+                        <article class="product-card" id="product-iphone">
 
                             <span class="discount">-15%</span>
 
-                            <button class="wishlist-icon">
-                                ♡
-                            </button>
+                            <input class="state-toggle wishlist-toggle" type="checkbox" id="wishlist-iphone" aria-label="Save iPhone 16 to wishlist">
+                            <label class="wishlist-icon" for="wishlist-iphone">
+                                <span class="heart-outline" aria-hidden="true">&#9825;</span>
+                                <span class="heart-filled" aria-hidden="true">&#10084;</span>
+                            </label>
 
                             <div class="product-image">
                                 <img
@@ -268,9 +276,11 @@
                                     <strong>₹76,415</strong>
                                 </div>
 
-                                <button class="add-cart">
-                                    🛒 Add to Cart
-                                </button>
+                                <input class="state-toggle cart-toggle" type="checkbox" id="cart-iphone" aria-label="Add iPhone 16 to cart">
+                                <label class="add-cart" for="cart-iphone">
+                                    <span class="add-cart-label">Add to Cart</span>
+                                    <span class="remove-cart-label">Remove from Cart</span>
+                                </label>
 
                             </div>
 
@@ -278,13 +288,15 @@
 
 
                         <!-- PRODUCT 2 -->
-                        <article class="product-card">
+                        <article class="product-card" id="product-earbuds">
 
                             <span class="discount">-40%</span>
 
-                            <button class="wishlist-icon">
-                                ♡
-                            </button>
+                            <input class="state-toggle wishlist-toggle" type="checkbox" id="wishlist-earbuds" aria-label="Save boAt Airdopes 141 to wishlist">
+                            <label class="wishlist-icon" for="wishlist-earbuds">
+                                <span class="heart-outline" aria-hidden="true">&#9825;</span>
+                                <span class="heart-filled" aria-hidden="true">&#10084;</span>
+                            </label>
 
                             <div class="product-image">
                                 <img
@@ -302,9 +314,11 @@
                                     <strong>₹2,099</strong>
                                 </div>
 
-                                <button class="add-cart">
-                                    🛒 Add to Cart
-                                </button>
+                                <input class="state-toggle cart-toggle" type="checkbox" id="cart-earbuds" aria-label="Add boAt Airdopes 141 to cart">
+                                <label class="add-cart" for="cart-earbuds">
+                                    <span class="add-cart-label">Add to Cart</span>
+                                    <span class="remove-cart-label">Remove from Cart</span>
+                                </label>
 
                             </div>
 
@@ -312,13 +326,15 @@
 
 
                         <!-- PRODUCT 3 -->
-                        <article class="product-card">
+                        <article class="product-card" id="product-watch">
 
                             <span class="discount">-50%</span>
 
-                            <button class="wishlist-icon">
-                                ♡
-                            </button>
+                            <input class="state-toggle wishlist-toggle" type="checkbox" id="wishlist-watch" aria-label="Save Noise ColorFit Pro 5 to wishlist">
+                            <label class="wishlist-icon" for="wishlist-watch">
+                                <span class="heart-outline" aria-hidden="true">&#9825;</span>
+                                <span class="heart-filled" aria-hidden="true">&#10084;</span>
+                            </label>
 
                             <div class="product-image">
                                 <img
@@ -336,9 +352,11 @@
                                     <strong>₹3,999</strong>
                                 </div>
 
-                                <button class="add-cart">
-                                    🛒 Add to Cart
-                                </button>
+                                <input class="state-toggle cart-toggle" type="checkbox" id="cart-watch" aria-label="Add Noise ColorFit Pro 5 to cart">
+                                <label class="add-cart" for="cart-watch">
+                                    <span class="add-cart-label">Add to Cart</span>
+                                    <span class="remove-cart-label">Remove from Cart</span>
+                                </label>
 
                             </div>
 
@@ -346,13 +364,15 @@
 
 
                         <!-- PRODUCT 4 -->
-                        <article class="product-card">
+                        <article class="product-card" id="product-shoes">
 
                             <span class="discount">-60%</span>
 
-                            <button class="wishlist-icon">
-                                ♡
-                            </button>
+                            <input class="state-toggle wishlist-toggle" type="checkbox" id="wishlist-shoes" aria-label="Save Nike Revolution 7 to wishlist">
+                            <label class="wishlist-icon" for="wishlist-shoes">
+                                <span class="heart-outline" aria-hidden="true">&#9825;</span>
+                                <span class="heart-filled" aria-hidden="true">&#10084;</span>
+                            </label>
 
                             <div class="product-image">
                                 <img
@@ -370,9 +390,11 @@
                                     <strong>₹2,799</strong>
                                 </div>
 
-                                <button class="add-cart">
-                                    🛒 Add to Cart
-                                </button>
+                                <input class="state-toggle cart-toggle" type="checkbox" id="cart-shoes" aria-label="Add Nike Revolution 7 to cart">
+                                <label class="add-cart" for="cart-shoes">
+                                    <span class="add-cart-label">Add to Cart</span>
+                                    <span class="remove-cart-label">Remove from Cart</span>
+                                </label>
 
                             </div>
 
@@ -380,13 +402,15 @@
 
 
                         <!-- PRODUCT 5 -->
-                        <article class="product-card">
+                        <article class="product-card" id="product-makeup">
 
                             <span class="discount">-35%</span>
 
-                            <button class="wishlist-icon">
-                                ♡
-                            </button>
+                            <input class="state-toggle wishlist-toggle" type="checkbox" id="wishlist-makeup" aria-label="Save Lakmé Makeup Kit to wishlist">
+                            <label class="wishlist-icon" for="wishlist-makeup">
+                                <span class="heart-outline" aria-hidden="true">&#9825;</span>
+                                <span class="heart-filled" aria-hidden="true">&#10084;</span>
+                            </label>
 
                             <div class="product-image">
                                 <img
@@ -404,9 +428,11 @@
                                     <strong>₹974</strong>
                                 </div>
 
-                                <button class="add-cart">
-                                    🛒 Add to Cart
-                                </button>
+                                <input class="state-toggle cart-toggle" type="checkbox" id="cart-makeup" aria-label="Add Lakmé Makeup Kit to cart">
+                                <label class="add-cart" for="cart-makeup">
+                                    <span class="add-cart-label">Add to Cart</span>
+                                    <span class="remove-cart-label">Remove from Cart</span>
+                                </label>
 
                             </div>
 
@@ -432,7 +458,46 @@
                     <h2>Saved Products</h2>
 
                     <div class="wishlist-products">
-                        <!-- Wishlist products will appear here -->
+                        <div class="wishlist-empty-state">
+                            <h3>Your wishlist is empty</h3>
+                            <p>Use the heart on a product to save it here.</p>
+                            <a href="#trending" class="continue-shopping">Browse Products</a>
+                        </div>
+
+                        <article class="wishlist-item" id="wishlist-item-iphone">
+                            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=160" alt="Smartphone">
+                            <div class="wishlist-item-details"><h3>iPhone 16</h3><p>₹76,415</p></div>
+                            <label class="wishlist-remove" for="wishlist-iphone">Remove</label>
+                            <label class="wishlist-add-cart" for="cart-iphone">Add to Cart</label>
+                        </article>
+
+                        <article class="wishlist-item" id="wishlist-item-earbuds">
+                            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=160" alt="Wireless earbuds">
+                            <div class="wishlist-item-details"><h3>boAt Airdopes 141</h3><p>₹2,099</p></div>
+                            <label class="wishlist-remove" for="wishlist-earbuds">Remove</label>
+                            <label class="wishlist-add-cart" for="cart-earbuds">Add to Cart</label>
+                        </article>
+
+                        <article class="wishlist-item" id="wishlist-item-watch">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=160" alt="Smart watch">
+                            <div class="wishlist-item-details"><h3>Noise ColorFit Pro 5</h3><p>₹3,999</p></div>
+                            <label class="wishlist-remove" for="wishlist-watch">Remove</label>
+                            <label class="wishlist-add-cart" for="cart-watch">Add to Cart</label>
+                        </article>
+
+                        <article class="wishlist-item" id="wishlist-item-shoes">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=160" alt="Nike shoes">
+                            <div class="wishlist-item-details"><h3>Nike Revolution 7</h3><p>₹2,799</p></div>
+                            <label class="wishlist-remove" for="wishlist-shoes">Remove</label>
+                            <label class="wishlist-add-cart" for="cart-shoes">Add to Cart</label>
+                        </article>
+
+                        <article class="wishlist-item" id="wishlist-item-makeup">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=160" alt="Makeup kit">
+                            <div class="wishlist-item-details"><h3>Lakmé Makeup Kit</h3><p>₹974</p></div>
+                            <label class="wishlist-remove" for="wishlist-makeup">Remove</label>
+                            <label class="wishlist-add-cart" for="cart-makeup">Add to Cart</label>
+                        </article>
                     </div>
 
                 </div>
@@ -651,12 +716,71 @@
             <section id="cart" class="page-section">
 
                 <div class="page-heading">
-                    <h1>My Shopping Cart 🛒</h1>
-                    <p>Review your shopping items.</p>
+                    <h1>Shopping Cart 🛒</h1>
+                    <p>Review your items before checkout.</p>
                 </div>
 
-                <div class="cart-container">
-                    <!-- Cart products will appear here -->
+                <div class="cart-page">
+                    <div class="cart-items-column">
+                        <div class="cart-empty-state">
+                            <div class="cart-empty-icon" aria-hidden="true">🛒</div>
+                            <h2>Your cart is empty</h2>
+                            <p>Find something you love and add it to your cart.</p>
+                            <a href="#trending" class="continue-shopping">Continue Shopping</a>
+                        </div>
+
+                        <div class="cart-items-list">
+                            <article class="cart-item" id="cart-item-iphone">
+                                <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=160" alt="Smartphone">
+                                <div class="cart-item-details"><h3>iPhone 16</h3><p>₹76,415</p></div>
+                                <label class="cart-remove" for="cart-iphone">Remove</label>
+                            </article>
+                            <article class="cart-item" id="cart-item-earbuds">
+                                <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=160" alt="Wireless earbuds">
+                                <div class="cart-item-details"><h3>boAt Airdopes 141</h3><p>₹2,099</p></div>
+                                <label class="cart-remove" for="cart-earbuds">Remove</label>
+                            </article>
+                            <article class="cart-item" id="cart-item-watch">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=160" alt="Smart watch">
+                                <div class="cart-item-details"><h3>Noise ColorFit Pro 5</h3><p>₹3,999</p></div>
+                                <label class="cart-remove" for="cart-watch">Remove</label>
+                            </article>
+                            <article class="cart-item" id="cart-item-shoes">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=160" alt="Nike shoes">
+                                <div class="cart-item-details"><h3>Nike Revolution 7</h3><p>₹2,799</p></div>
+                                <label class="cart-remove" for="cart-shoes">Remove</label>
+                            </article>
+                            <article class="cart-item" id="cart-item-makeup">
+                                <img src="https://images.unsplash.com/photo-1586495777744-4413f21085fa?w=160" alt="Makeup kit">
+                                <div class="cart-item-details"><h3>Lakmé Makeup Kit</h3><p>₹974</p></div>
+                                <label class="cart-remove" for="cart-makeup">Remove</label>
+                            </article>
+                        </div>
+                    </div>
+
+                    <aside class="cart-summary">
+                        <h2>Order Summary</h2>
+                        <div class="cart-summary-row">
+                            <span>Items</span>
+                            <strong class="cart-count-value"></strong>
+                        </div>
+                        <div class="cart-summary-row">
+                            <span>Subtotal</span>
+                            <strong class="cart-subtotal-value"></strong>
+                        </div>
+                        <div class="cart-summary-row">
+                            <span>Delivery</span>
+                            <strong>Free</strong>
+                        </div>
+                        <div class="cart-summary-row cart-total">
+                            <span>Total</span>
+                            <strong class="cart-total-value"></strong>
+                        </div>
+                        <button class="checkout-button" type="button" disabled>
+                            Proceed to Checkout
+                        </button>
+                        <p class="cart-summary-note">Checkout and payment need an online store service.</p>
+                    </aside>
                 </div>
 
             </section>
